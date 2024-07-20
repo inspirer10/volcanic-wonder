@@ -1,11 +1,13 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Header from './Components/Header';
 import Introduction from './Components/Introduction';
 import Views from './Components/Views';
-import { useEffect } from 'react';
-import Lenis from 'lenis';
 import Trip from './Components/Trip';
 import Footer from './Components/Footer';
+
+import Lenis from 'lenis';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home() {
     useEffect(() => {
@@ -39,6 +41,7 @@ export default function Home() {
                 <Views />
                 <Trip />
                 <Footer />
+                <SpeedInsights />
             </>
         </>
     );
