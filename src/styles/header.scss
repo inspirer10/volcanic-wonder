@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    margin: 1.25rem auto;
+    display: flex;
+    justify-content: space-between;
+    height: calc(10vh - 2.5rem);
+    .hamburger-menu {
+        font-size: 2rem;
+        margin-left: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+    nav {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: -0.25px;
+            transition: .175s ease-in-out;
+            border-bottom: 2px solid transparent;
+            font-family: "Space Grotesk", sans-serif;
+            &:hover {
+                border-bottom: 2px solid rgb(255, 210, 0);
+            }
+            &.logo {
+                text-transform: none;
+                font-family: 'Maven Pro';
+                font-size: 2.5rem;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                word-spacing: 2px;
+                padding: 0 2.5rem;
+                &:hover {
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+}

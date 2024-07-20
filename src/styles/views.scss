@@ -1,0 +1,377 @@
+.views_section-container {
+    background-color: #fff;
+    color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    padding-bottom: 15vh;
+    .views_article {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 15vh;
+        padding-left: 15vw;
+        img {
+            object-fit: cover;
+            height: 82.5vh;
+            min-width: 27.5vw;
+            max-width: 27.5vw;
+            margin-top: -7.5vh;
+        }
+        .views_description {
+            padding: 15vh 0;
+            margin-left: 5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            .subheading {
+                color: rgb(130, 130, 130);
+                font-size: 1.1rem;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-top: 1rem;
+            }
+            .description-text {
+                font-family: 'Maven Pro';
+                color: rgb(130, 130, 130);
+                font-size: 18px;
+                width: 28vw;
+                margin: 3rem 0;
+                line-height: calc(18px * 1.4);
+                letter-spacing: 1px;
+                word-spacing: 0.25px;
+            }
+            .button {
+                margin-top: 1rem;
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 1.25rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1.25px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+                .arrow-icon {
+                    font-size: 1.7rem;
+                    margin-left: 0.5rem;
+                    color: rgb(120, 120, 120);
+                }
+            }
+        }
+    }
+    .views_video_article {
+        width: 80%;
+        margin: 5vh auto;
+        position: relative;
+        .views-video {
+            object-fit: cover;
+            width: 100%;
+            height: 67.5vh;
+            filter: brightness(0.6);
+        }
+        .views-video-description {
+            color: #fff;
+            left: 60%;
+            z-index: 15;
+            width: 35%;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            bottom: -4rem;
+            width: auto;
+            padding: 1rem 2rem;
+            padding-right: 3rem;
+            transform: translateX(-120%);
+            h5 {
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin: 0.5rem 0 2rem;
+                line-height: 2rem;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                user-select: none;
+                .arrows-wrapper {
+                    font-size: 1.7rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .arrow-icon {
+                        cursor: pointer;
+                        margin-left: 1.5rem;
+                        transition: .15s ease-in-out;
+                        &:hover {
+                            transform: scale(1.065);
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 17px;
+                font-weight: 100;
+                font-variant: small-caps;
+                letter-spacing: 1.5px;
+                text-align: left;
+                user-select: none;
+                padding-right: 5rem;
+            }
+        }
+    }
+    .volcanic-landforms-article {
+        width: 80%;
+        margin: 15vh auto 0;
+        padding-bottom: 15vh;
+        display: flex;
+        justify-content: space-evenly;
+        .side-img {
+            background-size: cover;
+            height: 87.5vh;
+            min-width: 30vw;
+            max-width: 30vw;
+            margin-left: 2.5vw;
+            margin-top: 5vh;
+            position: relative;
+            z-index: 25;
+            .left-arrow {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: #fff;
+                padding: 0.3rem 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                    color: rgb(45, 45, 45);
+                    font-size: 2.5rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .17s ease-in-out;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+            .right-arrow {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background-color: #fff;
+                padding: 0.3rem 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                    color: rgb(45, 45, 45);
+                    font-size: 2.5rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .17s ease-in-out;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .views_description {
+            padding: 15vh 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            .subheading {
+                color: rgb(130, 130, 130);
+                font-size: 1.1rem;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin: 0.75rem 0;
+            }
+            .description-text {
+                font-family: 'Maven Pro';
+                color: rgb(120, 120, 120);
+                margin: 1.5rem 0 0rem;
+                width: 26vw;
+                font-size: 18px;
+                line-height: calc(18px * 1.4);
+                letter-spacing: 1px;
+                word-spacing: 0.25px;
+                text-wrap: balance;
+            }
+            .button {
+                margin-top: 2.5rem;
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 1.25rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1.25px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+                .arrow-icon {
+                    font-size: 1.7rem;
+                    margin-left: 0.75rem;
+                    color: rgb(120, 120, 120);
+                }
+            }
+        }
+    }
+    .views_experience_article {
+        color: #fff;
+        position: relative;
+        width: 100%;
+        margin-top: -25vh;
+        .experience_bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.875);
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.975), rgba(20, 20, 20, 0.9));
+            z-index: 2;
+        }
+        .views_experience-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            user-select: none;
+            margin-top: 27.5vh;
+            h3 {
+                margin-top: 0.5rem;
+                font-family: 'Maven Pro';
+                font-size: 4rem;
+                font-weight: 600;
+            }
+            .main_subheading {
+                margin-top: 0.5rem;
+                text-transform: uppercase;
+                font-weight: 200;
+                letter-spacing: 0.75px;
+                word-spacing: 3px;
+            }
+            .explore-cards-wrapper {
+                margin: 10vh auto;
+                width: 92.5%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                .explore-card {
+                    width: 30%;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        object-fit: cover;
+                        width: 85%;
+                        height: 28.5vh;
+                    }
+                    h5 {
+                        width: 85%;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        margin: 0.3rem 0 1.5rem;
+                        letter-spacing: 0.25px;
+                    }
+                    .card-text {
+                        width: 85%;
+                        font-family: 'Space Grotesk';
+                        text-transform: none;
+                        font-weight: 100;
+                        text-align: justify;
+                        letter-spacing: 1px;
+                        word-spacing: 0px;
+                        margin: 1rem 0 2rem;
+                    }
+                    .button {
+                        width: 85%;
+                        font-family: 'Maven Pro';
+                        text-transform: uppercase;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        letter-spacing: 1.4px;
+                        font-weight: 400;
+                        font-size: 1.15rem;
+                        cursor: pointer;
+                        .icon {
+                            margin-left: 0.75rem;
+                            font-size: 1.35rem;
+                        }
+                    }
+                }
+            }
+            .coastal_video-wrapper {
+                width: 80%;
+                margin: 10vh auto 27.5vh;
+                position: relative;
+                .coastal_video {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 67.5vh;
+                    filter: brightness(0.7);
+                }
+                .coastal_video-description {
+                    background-color: rgba(0, 0, 0, 0.75);
+                    position: absolute;
+                    bottom: -5rem;
+                    left: 60%;
+                    width: auto;
+                    padding: 1rem 2rem;
+                    padding-right: 3rem;
+                    transform: translateX(-25%);
+                    backdrop-filter: blur(3.5px);
+                    h6 {
+                        margin: 0.25rem 0 1.5rem;
+                        font-family: "Space Grotesk", sans-serif;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        user-select: none;
+                        .volcano-icon {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .description_paragraph {
+                        font-size: 16px;
+                        font-weight: 100;
+                        font-variant: small-caps;
+                        letter-spacing: 1.25px;
+                        text-align: left;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}
