@@ -36,12 +36,17 @@ footer {
             p {
                 font-family: "Space Grotesk", sans-serif;
                 text-transform: uppercase;
-                font-size: 1.3rem;
+                font-size: 1.25rem;
+                border-bottom: 2px solid transparent;
                 cursor: pointer;
+                transition: .15s ease-in-out;
+                &:hover {
+                    border-bottom: 2px solid rgb(255, 210, 0)
+                }
             }
         }
         .footer_info {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             letter-spacing: 1px;
             font-weight: 200;
             margin: 7.5% 0 4.5%;
@@ -60,6 +65,10 @@ footer {
                 justify-content: space-between;
                 align-items: start;
                 cursor: pointer;
+                transition: .15s ease-in-out;
+                &:hover {
+                    scale: 1.08;
+                }
             }
         }
     }

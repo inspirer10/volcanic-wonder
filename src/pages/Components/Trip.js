@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { HiArrowLongRight } from 'react-icons/hi2';
-import { PiPlayCircleThin } from 'react-icons/pi';
+
 import {
     MdOutlinePlayCircle as PlayIcon,
     MdOutlinePauseCircleOutline as PauseIcon,
@@ -132,6 +132,17 @@ function Trip() {
                             </div>
                         )
                     )}
+                </div>
+
+                <div className='map_section'>
+                    <div className='map_section_bg-image' />
+                    <div className='test'>
+                        <h6>
+                            Harpers Ferry Center
+                            <HiArrowLongRight className='arrow-icon' />
+                        </h6>
+                        <p>The National Park Services</p>
+                    </div>
                 </div>
             </article>
         </section>
