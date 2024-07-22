@@ -1,9 +1,16 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebook, FaYoutube, FaXTwitter } from 'react-icons/fa6';
 import { IoAirplaneSharp } from 'react-icons/io5';
 
 function Introduction() {
+    const router = useRouter();
+
+    const navigateToMap = (link) => {
+        router.push(`#${link}`);
+    };
+
     return (
         <section className='introduction'>
             <div className='social-icons'>
@@ -32,7 +39,10 @@ function Introduction() {
                 preload
             />
 
-            <div className='start-trip'>
+            <div
+                className='start-trip'
+                onClick={() => navigateToMap('yourTrip')}
+            >
                 <IoAirplaneSharp className='plane_icon' />
                 Start your trip
             </div>

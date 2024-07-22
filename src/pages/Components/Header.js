@@ -1,18 +1,25 @@
 import React from 'react';
 import { RiMenu2Line } from 'react-icons/ri';
+import { useRouter } from 'next/router';
 
 function Header() {
+    const router = useRouter();
+
+    const navigateToMap = (link) => {
+        router.push(`#${link}`);
+    };
+
     return (
         <header>
             <p className='hamburger-menu'>
                 <RiMenu2Line />
             </p>
             <nav>
-                <p>History</p>
-                <p>About</p>
+                <p onClick={() => navigateToMap('views')}>Views</p>
+                <p onClick={() => navigateToMap('yourTrip')}>Your trip</p>
                 <p className='logo'>Volcanic Wonder</p>
-                <p>Your trip</p>
-                <p>Map</p>
+                <p onClick={() => navigateToMap('experience')}>Experience</p>
+                <p onClick={() => navigateToMap('map')}>Map</p>
             </nav>
         </header>
     );

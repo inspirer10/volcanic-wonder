@@ -27,6 +27,7 @@ footer {
             font-size: 3.5rem;
             font-weight: 500;
             margin-bottom: 5%;
+            cursor: pointer;
         }
         .footer_content-wrapper {
             display: flex;
@@ -70,6 +71,14 @@ footer {
                     scale: 1.08;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    footer {
+        .footer_content-container {
+            width: 70%;
         }
     }
 }

@@ -86,7 +86,7 @@ function Views() {
 
     return (
         <section className='views_section-container'>
-            <article className='views_article'>
+            <article className='views_article' id='views'>
                 <img src='img1.jpg' alt='image' />
                 <div className='views_description'>
                     <h2>THE VIEWS</h2>
@@ -202,8 +202,8 @@ function Views() {
                             <p className='card-text'>
                                 Karst is a type of landscape where the
                                 dissolving of the bedrock has created sinkholes,
-                                sinking streams, caves, springs, and other
-                                characteristic features.
+                                caves, springs and other characteristic
+                                features.
                             </p>
                             <p className='button'>
                                 Explore more

@@ -66,7 +66,7 @@ function Trip() {
 
     return (
         <section className='your_trip_section'>
-            <article className='your_trip-wrapper'>
+            <article className='your_trip-wrapper' id='yourTrip'>
                 <img src='trip1.jpg' alt='image' />
                 <div className='views_description'>
                     <h2>YOUR TRIP</h2>
@@ -87,7 +87,7 @@ function Trip() {
                 </div>
             </article>
 
-            <article className='experience-slider-container'>
+            <article className='experience-slider-container' id='experience'>
                 <h2>Experience</h2>
                 <p className='experience_subheading'>
                     experiences from travellers
@@ -136,7 +136,7 @@ function Trip() {
                     )}
                 </div>
 
-                <div className='map_section'>
+                <div className='map_section' id='map'>
                     <Pin className='pin-icon' />
                     <Pin className='pin-icon second-pin' />
                     <Pin className='pin-icon third-pin' />
