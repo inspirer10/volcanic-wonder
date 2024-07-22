@@ -436,6 +436,23 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .introduction_text {
+        width: 90%;
+        h3 {
+            margin-right: 5%;
+        }
+        .description {
+            .paragraph {
+                color: rgb(150, 150, 150);
+                width: 80%;
+                line-height: calc(19px * 1.475);
+            }
+            .button {
+                margin-top: 2.25rem;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
     .views_section-container {
         .views_article {
             width: 90%;
