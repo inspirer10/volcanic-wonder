@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebook, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { HiArrowLongRight } from 'react-icons/hi2';
 import { IoAirplaneSharp } from 'react-icons/io5';
 
 function Introduction() {

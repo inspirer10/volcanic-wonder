@@ -95,192 +95,234 @@ function Views() {
     const scrollParalax = useTransform(scrollYProgress, [0, 1], [0, -275]);
 
     return (
-        <section className='views_section-container'>
-            <article className='views_article' id='views' ref={container}>
-                <motion.div style={{ y: scrollParalax }}>
-                    <img src='img1.jpg' alt='image' />
-                </motion.div>
+        <>
+            <div className='introduction_text'>
+                <h3>
+                    <span className='highlited'>Explore</span> the <br />
+                    <span className='border-bottom'>Un</span>discovered
+                </h3>
 
-                <div className='views_description'>
-                    <h2>THE VIEWS</h2>
-                    <p className='subheading'>Enjoy the views of a lifetime</p>
-                    <p className='description-text'>
-                        National parks contain many of our nation's most
-                        treasured landscapes, from the majestic mountain ranges
-                        of Alaska to the vast prairies of the Everglades. Learn
-                        about the natural resources in parks, from the rocks
-                        under our feet to the sky overhead and everything in
-                        between. Discover the issues that affect our parks and
-                        how we join with neighbors and partners to address them.
-                        Meet the people who protect our parks and learn how you
-                        can help preserve these treasures for generations to
-                        come.
+                <div className='description'>
+                    <p className='paragraph'>
+                        Lassen Volcanic National Park is home to steaming
+                        fumaroles, meadows freckled with wildflowers, clear
+                        mountain lakes, and numerous volcanoes. Jagged peaks
+                        tell the story of its eruptive past while hot water
+                        continues to shape the land. Lassen Volcanic offers
+                        opportunities to discover the wonder and mysteries of
+                        volcanoes and hot water for visitors willing to explore
+                        the undiscovered.
                     </p>
                     <p className='button'>
-                        Points of interest
+                        Explore lassen volcanic
                         <HiArrowLongRight className='arrow-icon' />
                     </p>
                 </div>
-            </article>
+            </div>
 
-            <article className='views_video_article'>
-                <video
-                    className='views-video'
-                    src={'/vid6.mp4'}
-                    playsinline
-                    autoPlay
-                    loop
-                    muted
-                    disablepictureinpicture
-                    preload
-                />
+            <section className='views_section-container'>
+                <article className='views_article' id='views' ref={container}>
+                    <motion.div style={{ y: scrollParalax }}>
+                        <img src='img1.jpg' alt='image' />
+                    </motion.div>
 
-                <div className='views-video-description'>
-                    <h5>
-                        {descriptionOptions[currentDescription].title}
-                        <div className='arrows-wrapper'>
-                            <HiArrowLongLeft
-                                className='arrow-icon'
-                                onClick={() => handleChange('prev')}
-                            />
-                            <HiArrowLongRight
-                                className='arrow-icon'
-                                onClick={() => handleChange('next')}
-                            />
-                        </div>
-                    </h5>
-                    <p>{descriptionOptions[currentDescription].description}</p>
-                </div>
-            </article>
+                    <div className='views_description'>
+                        <h2>THE VIEWS</h2>
+                        <p className='subheading'>
+                            Enjoy the views of a lifetime
+                        </p>
+                        <p className='description-text'>
+                            National parks contain many of our nation's most
+                            treasured landscapes, from the majestic mountain
+                            ranges of Alaska to the vast prairies of the
+                            Everglades. Learn about the natural resources in
+                            parks, from the rocks under our feet to the sky
+                            overhead and everything in between. Discover the
+                            issues that affect our parks and how we join with
+                            neighbors and partners to address them. Meet the
+                            people who protect our parks and learn how you can
+                            help preserve these treasures for generations to
+                            come.
+                        </p>
+                        <p className='button'>
+                            Points of interest
+                            <HiArrowLongRight className='arrow-icon' />
+                        </p>
+                    </div>
+                </article>
 
-            <article className='volcanic-landforms-article'>
-                <aside className='views_description'>
-                    <h2>VOLCANIC LANDFORMS</h2>
-                    <p className='subheading'>
-                        Volcanic processes create many features we see
-                    </p>
-                    <p className='description-text'>
-                        Extrusive igneous landforms are the result of magma
-                        coming from deep within the earth to the surface, where
-                        it cools as lava. This can happen explosively or slowly,
-                        depending on the chemical composition of the lava and
-                        whether there is an easy path for it to take to the
-                        surface. If there is not a pathway, pressure builds up
-                        over time (like a shaken soda) until the magma forcibly
-                        explodes outward.
-                    </p>
-                    <p className='description-text '>
-                        Volcanic processes are constantly changing the Earth.
-                        Eruptions can create new islands, build and destroy
-                        mountains, and alter landscapes.
-                    </p>
-                    <p className='button'>
-                        Points of interest
-                        <HiArrowLongRight className='arrow-icon' />
-                    </p>
-                </aside>
+                <article className='views_video_article'>
+                    <video
+                        className='views-video'
+                        src={'/vid6.mp4'}
+                        playsinline
+                        autoPlay
+                        loop
+                        muted
+                        disablepictureinpicture
+                        preload
+                    />
 
-                <div
-                    style={{
-                        backgroundImage: `url(volcanic${currentImg}.jpg)`,
-                    }}
-                    className='side-img'
-                >
+                    <div className='views-video-description'>
+                        <h5>
+                            {descriptionOptions[currentDescription].title}
+                            <div className='arrows-wrapper'>
+                                <HiArrowLongLeft
+                                    className='arrow-icon'
+                                    onClick={() => handleChange('prev')}
+                                />
+                                <HiArrowLongRight
+                                    className='arrow-icon'
+                                    onClick={() => handleChange('next')}
+                                />
+                            </div>
+                        </h5>
+                        <p>
+                            {descriptionOptions[currentDescription].description}
+                        </p>
+                    </div>
+                </article>
+
+                <article className='volcanic-landforms-article'>
+                    <aside className='views_description'>
+                        <h2>VOLCANIC LANDFORMS</h2>
+                        <p className='subheading'>
+                            Volcanic processes create many features we see
+                        </p>
+                        <p className='description-text'>
+                            Extrusive igneous landforms are the result of magma
+                            coming from deep within the earth to the surface,
+                            where it cools as lava. This can happen explosively
+                            or slowly, depending on the chemical composition of
+                            the lava and whether there is an easy path for it to
+                            take to the surface. If there is not a pathway,
+                            pressure builds up over time (like a shaken soda)
+                            until the magma forcibly explodes outward.
+                        </p>
+                        <p className='description-text '>
+                            Volcanic processes are constantly changing the
+                            Earth. Eruptions can create new islands, build and
+                            destroy mountains, and alter landscapes.
+                        </p>
+                        <p className='button'>
+                            Points of interest
+                            <HiArrowLongRight className='arrow-icon' />
+                        </p>
+                    </aside>
+
                     <div
-                        className='left-arrow'
-                        onClick={() => handleImgChange('prev')}
+                        style={{
+                            backgroundImage: `url(volcanic${currentImg}.jpg)`,
+                        }}
+                        className='side-img'
                     >
-                        <HiArrowLongLeft className='icon' />
-                    </div>
-                    <div
-                        className='right-arrow'
-                        onClick={() => handleImgChange('next')}
-                    >
-                        <HiArrowLongRight className='icon' />
-                    </div>
-                </div>
-            </article>
-
-            <article class='views_experience_article'>
-                <img src='img3.jpg' class='experience_bg-image' />
-                <div class='overlay' />
-                <div class='views_experience-content'>
-                    <h3>EXPERIENCE</h3>
-                    <p className='main_subheading'>National Park California</p>
-
-                    <div className='explore-cards-wrapper'>
-                        <div className='explore-card'>
-                            <img src='thumbnail2.jpg' alt='card thumbnail' />
-                            <h5>KARST LANDSCAPES</h5>
-                            <p className='card-text'>
-                                Karst is a type of landscape where the
-                                dissolving of the bedrock has created sinkholes,
-                                caves, springs and other characteristic
-                                features.
-                            </p>
-                            <p className='button'>
-                                Explore more
-                                <HiArrowLongRight className='icon' />
-                            </p>
+                        <div
+                            className='left-arrow'
+                            onClick={() => handleImgChange('prev')}
+                        >
+                            <HiArrowLongLeft className='icon' />
                         </div>
-                        <div className='explore-card'>
-                            <img src='thumbnail3.jpg' alt='card thumbnail' />
-                            <h5>FLUVIAL LANDSFORMS</h5>
-                            <p className='card-text'>
-                                Fluvial systems are dominatend by rivers and
-                                streams. Stream erosion may be the most
-                                important geomorphic agent.
-                            </p>
-                            <p className='button'>
-                                Explore more
-                                <HiArrowLongRight className='icon' />
-                            </p>
-                        </div>
-                        <div className='explore-card'>
-                            <img src='thumbnail1.jpg' alt='card thumbnail' />
-                            <h5>FLUVIAL LANDSFORMS </h5>
-                            <p className='card-text'>
-                                Eolian processes involve erosion,
-                                transportation, and deposition of sediment by
-                                the wind. These processes occur in a variety of
-                                environments.
-                            </p>
-                            <p className='button'>
-                                Explore more
-                                <HiArrowLongRight className='icon' />
-                            </p>
+                        <div
+                            className='right-arrow'
+                            onClick={() => handleImgChange('next')}
+                        >
+                            <HiArrowLongRight className='icon' />
                         </div>
                     </div>
+                </article>
 
-                    <article className='coastal_video-wrapper'>
-                        <video
-                            className='coastal_video'
-                            src={'/vid5.mp4'}
-                            playsinline
-                            autoPlay
-                            loop
-                            muted
-                            disablepictureinpicture
-                            //preload
-                        />
+                <article class='views_experience_article'>
+                    <img src='img3.jpg' class='experience_bg-image' />
+                    <div class='overlay' />
+                    <div class='views_experience-content'>
+                        <h3>EXPERIENCE</h3>
+                        <p className='main_subheading'>
+                            National Park California
+                        </p>
 
-                        <div className='coastal_video-description'>
-                            <h6>
-                                Coastal Landforms
-                                <MdVolcano className='volcano-icon' />
-                            </h6>
-                            <p className='description_paragraph'>
-                                Our national parks contain diverse coastal
-                                environments: high energy rocky shorelines of
-                                Acadia national park in maine, quiet lagoons
-                                within war in the pacific national historical
-                                park.
-                            </p>
+                        <div className='explore-cards-wrapper'>
+                            <div className='explore-card'>
+                                <img
+                                    src='thumbnail2.jpg'
+                                    alt='card thumbnail'
+                                />
+                                <h5>KARST LANDSCAPES</h5>
+                                <p className='card-text'>
+                                    Karst is a type of landscape where the
+                                    dissolving of the bedrock has created
+                                    sinkholes, caves, springs and other
+                                    characteristic features.
+                                </p>
+                                <p className='button'>
+                                    Explore more
+                                    <HiArrowLongRight className='icon' />
+                                </p>
+                            </div>
+                            <div className='explore-card'>
+                                <img
+                                    src='thumbnail3.jpg'
+                                    alt='card thumbnail'
+                                />
+                                <h5>FLUVIAL LANDSFORMS</h5>
+                                <p className='card-text'>
+                                    Fluvial systems are dominatend by rivers and
+                                    streams. Stream erosion may be the most
+                                    important geomorphic agent.
+                                </p>
+                                <p className='button'>
+                                    Explore more
+                                    <HiArrowLongRight className='icon' />
+                                </p>
+                            </div>
+                            <div className='explore-card'>
+                                <img
+                                    src='thumbnail1.jpg'
+                                    alt='card thumbnail'
+                                />
+                                <h5>FLUVIAL LANDSFORMS </h5>
+                                <p className='card-text'>
+                                    Eolian processes involve erosion,
+                                    transportation, and deposition of sediment
+                                    by the wind. These processes occur in a
+                                    variety of environments.
+                                </p>
+                                <p className='button'>
+                                    Explore more
+                                    <HiArrowLongRight className='icon' />
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                </div>
-            </article>
-        </section>
+
+                        <article className='coastal_video-wrapper'>
+                            <video
+                                className='coastal_video'
+                                src={'/vid5.mp4'}
+                                playsinline
+                                autoPlay
+                                loop
+                                muted
+                                disablepictureinpicture
+                                //preload
+                            />
+
+                            <div className='coastal_video-description'>
+                                <h6>
+                                    Coastal Landforms
+                                    <MdVolcano className='volcano-icon' />
+                                </h6>
+                                <p className='description_paragraph'>
+                                    Our national parks contain diverse coastal
+                                    environments: high energy rocky shorelines
+                                    of Acadia national park in maine, quiet
+                                    lagoons within war in the pacific national
+                                    historical park.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+        </>
     );
 }
 
