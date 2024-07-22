@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2';
 import { MdVolcano } from 'react-icons/md';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 function Views() {
     const [currentDescription, setCurrentDescription] = useState(0);
@@ -84,10 +85,22 @@ function Views() {
         };
     }, [currentDescription]);
 
+    const container = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ['start end', 'end start'],
+    });
+
+    const scrollParalax = useTransform(scrollYProgress, [0, 1], [0, -275]);
+
     return (
         <section className='views_section-container'>
-            <article className='views_article' id='views'>
-                <img src='img1.jpg' alt='image' />
+            <article className='views_article' id='views' ref={container}>
+                <motion.div style={{ y: scrollParalax }}>
+                    <img src='img1.jpg' alt='image' />
+                </motion.div>
+
                 <div className='views_description'>
                     <h2>THE VIEWS</h2>
                     <p className='subheading'>Enjoy the views of a lifetime</p>

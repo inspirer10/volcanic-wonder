@@ -7,9 +7,18 @@ import {
 } from 'react-icons/md';
 
 import { IoIosPin as Pin } from 'react-icons/io';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 function Trip() {
     const videoRefs = useRef([]);
+    const container = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ['start end', 'end start'],
+    });
+
+    const scrollParalax = useTransform(scrollYProgress, [0, 1], [0, -275]);
 
     const [cardsContent, setCardsContent] = useState([
         {
@@ -66,8 +75,15 @@ function Trip() {
 
     return (
         <section className='your_trip_section'>
-            <article className='your_trip-wrapper' id='yourTrip'>
-                <img src='trip1.jpg' alt='image' />
+            <article
+                className='your_trip-wrapper'
+                id='yourTrip'
+                ref={container}
+            >
+                <motion.div style={{ y: scrollParalax }}>
+                    <img src='trip1.jpg' alt='image' />
+                </motion.div>
+
                 <div className='views_description'>
                     <h2>YOUR TRIP</h2>
                     <p className='subheading'>Discover the lassen volcanic</p>
