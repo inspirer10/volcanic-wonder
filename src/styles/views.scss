@@ -6,20 +6,23 @@
     margin-top: 25vh;
     padding-bottom: 15vh;
     .views_article {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         justify-content: flex-start;
+        justify-content: center;
         padding-bottom: 15vh;
-        padding-left: 15vw;
+        //padding-left: 15vw;
         img {
             object-fit: cover;
-            height: 82.5vh;
-            min-width: 27.5vw;
-            max-width: 27.5vw;
+            height: 85vh;
+            min-width: 28vw;
+            max-width: 28vw;
             margin-top: -7.5vh;
         }
         .views_description {
             padding: 15vh 0;
-            margin-left: 5vw;
+            margin-left: 4vw;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -39,9 +42,9 @@
                 font-family: 'Maven Pro';
                 color: rgb(130, 130, 130);
                 font-size: 18px;
-                width: 28vw;
+                width: 25vw;
                 margin: 3rem 0;
-                line-height: calc(18px * 1.4);
+                line-height: calc(18px * 1.425);
                 letter-spacing: 1px;
                 word-spacing: 0.25px;
             }
@@ -367,6 +370,205 @@
                         letter-spacing: 1.25px;
                         text-align: left;
                         user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .views_section-container {
+        .views_article {
+            width: 90%;
+            padding-bottom: 15vh;
+            img {
+                object-fit: cover;
+                height: 85vh;
+                min-width: 32.5vw;
+                max-width: 32.5vw;
+                margin-top: -7vh;
+            }
+            .views_description {
+                padding: 7.5vh 0;
+                margin-left: 4vw;
+                .subheading {
+                    margin-top: 0.25rem;
+                }
+                .description-text {
+                    color: rgb(110, 110, 110);
+                    font-size: 19px;
+                    width: 32.5vw;
+                    margin: 2.5rem 0;
+                    line-height: calc(19px * 1.425);
+                    letter-spacing: 0.3px;
+                    word-spacing: 0px;
+                    text-wrap: pretty;
+                }
+                .button {
+                    font-size: 1.3rem;
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+        .views_video_article {
+            width: 90%;
+            margin: 5vh auto;
+            .views-video {
+                height: 70vh;
+            }
+            .views-video-description {
+                width: 46%;
+                padding: 1.2rem 2rem;
+                background-color: rgba(0, 0, 0, 0.825);
+                h5 {
+                    font-size: 1.45rem;
+                    margin: 0.3rem 0 2.25rem;
+                    .arrows-wrapper {
+                        font-size: 1.75rem;
+                        .arrow-icon {
+                            margin-left: 1.5rem;
+                            &:hover {
+                                transform: scale(1.07);
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: 100;
+                    letter-spacing: 1.5px;
+                    text-align: left;
+                    padding-right: 5rem;
+                }
+            }
+        }
+        .volcanic-landforms-article {
+            width: 90%;
+            margin: 20vh auto 0;
+            padding-bottom: 15vh;
+            justify-content: space-around;
+            .side-img {
+                height: 87.5vh;
+                min-width: 35vw;
+                max-width: 35vw;
+                margin-left: 0;
+                margin-top: 2.5vh;
+                .left-arrow {
+                    padding: 0.25rem 1.5rem;
+                    .icon {
+                        font-size: 2.4rem;
+                    }
+                }
+                .right-arrow {
+                    padding: 0.25rem 1.25rem;
+                    .icon {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            .views_description {
+                padding: 10vh 0 20vh;
+                align-items: flex-start;
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 600;
+                    color: black;
+                }
+                .subheading {
+                    color: rgb(150, 150, 150);
+                    font-size: 18px;
+                    letter-spacing: 1.25px;
+                    margin: 0.3rem 0;
+                }
+                .description-text {
+                    color: rgb(110, 110, 110);
+                    width: 35vw;
+                    font-size: 19px;
+                    line-height: calc(19px * 1.4);
+                    letter-spacing: 0.5px;
+                    word-spacing: 0;
+                }
+                .button {
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .views_experience_article {
+            margin-top: -22.5vh;
+            .views_experience-content {
+                margin-top: 22.5vh;
+                h3 {
+                    font-size: 3.75rem;
+                    letter-spacing: 0.25px;
+                }
+                .main_subheading {
+                    margin-top: 0.3rem;
+                    font-weight: 200;
+                    letter-spacing: 1.25px;
+                    word-spacing: 2.5px;
+                }
+                .explore-cards-wrapper {
+                    margin: 7.5vh auto 17.5vh;
+                    width: 100%;
+                    .explore-card {
+                        width: 33%;
+                        img {
+                            object-fit: cover;
+                            width: 85%;
+                            height: 28.5vh;
+                        }
+                        h5 {
+                            font-family: 'Space Grotesk';
+                            width: 85%;
+                            font-size: 1.3rem;
+                            font-weight: 500;
+                            margin: 0.3rem 0 1.5rem;
+                            letter-spacing: 0.25px;
+                        }
+                        .card-text {
+                            font-family: 'Inter';
+                            width: 85%;
+                            font-weight: 100;
+                            text-align: justify;
+                            letter-spacing: 1px;
+                            word-spacing: 0px;
+                            margin: 0.2rem 0 2.25rem;
+                        }
+                        .button {
+                            width: 85%;
+                            justify-content: flex-start;
+                            letter-spacing: 1.5px;
+                            font-weight: 500;
+                            font-size: 1.2rem;
+                            .icon {
+                                margin-left: 1rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                .coastal_video-wrapper {
+                    width: 90%;
+                    margin: 10vh auto 27.5vh;
+                    .coastal_video {
+                        height: 65vh;
+                        filter: brightness(0.675);
+                    }
+                    .coastal_video-description {
+                        background-color: rgba(0, 0, 0, 0.675);
+                        left: 55%;
+                        transform: translate(-17.5%, 55%);
+                        width: auto;
+                        padding: 1.1rem 2rem;
+                        padding-right: 2.5rem;
+                        backdrop-filter: blur(4.5px);
+                        h6 {
+                            margin: 0.25rem 0 1rem;
+                        }
+                        .description_paragraph {
+                            letter-spacing: 1.2px;
+                        }
                     }
                 }
             }

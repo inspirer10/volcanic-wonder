@@ -248,7 +248,7 @@ function Views() {
                             loop
                             muted
                             disablepictureinpicture
-                            preload
+                            //preload
                         />
 
                         <div className='coastal_video-description'>

@@ -9,12 +9,12 @@
     height: 82.5vh;
     .social-icons {
         position: absolute;
-        left: 2.5rem;
+        left: 2.75rem;
         top: 50%;
         transform: translate(-50%, -50%);
         p {
-            font-size: 1.5rem;
-            padding: 1.4rem 0;
+            font-size: 1.6rem;
+            margin: 3rem 0;
             transition: .175s ease-in-out;
             cursor: pointer;
             &:hover {

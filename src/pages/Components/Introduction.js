@@ -23,7 +23,7 @@ function Introduction() {
 
             <video
                 className='main-video'
-                src={'/vid4.mp4'}
+                src={'/vid1.mp4'}
                 playsinline
                 autoPlay
                 loop

@@ -45,3 +45,14 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    header {
+        .hamburger-menu {
+            margin-left: 2.25rem;
+        }
+        nav {
+            width: 57.5%;
+        }
+    }
+}

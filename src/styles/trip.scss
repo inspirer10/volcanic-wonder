@@ -238,3 +238,211 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .your_trip_section {
+        .your_trip-wrapper {
+            padding-bottom: 12.5vh;
+            width: 95%;
+            margin: -15vh auto 0;
+            img {
+                object-fit: cover;
+                height: 85vh;
+                min-width: 35vw;
+                max-width: 35vw;
+                margin-top: -7.5vh;
+            }
+            .views_description {
+                margin-top: 0;
+                padding: 10vh 0;
+                margin-left: 4vw;
+                h2 {
+                    color: #000;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    margin-left: -6px;
+                }
+                .subheading {
+                    color: rgb(150, 150, 150);
+                    font-size: 18px;
+                    letter-spacing: 1.4px;
+                    margin-top: 0.35rem;
+                }
+                .description-text {
+                    color: rgb(25, 25, 25);
+                    font-size: 20px;
+                    line-height: calc(20px * 1.425);
+                    letter-spacing: 0.25px;
+                    width: 67.5%;
+                }
+                .button {
+                    margin-top: 0.75rem;
+                    .arrow-icon {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+        .experience-slider-container {
+            h2 {
+                font-size: 3.25rem;
+                letter-spacing: 0.75px;
+            }
+            .experience_subheading {
+                color: rgb(125, 125, 125);
+                font-size: 18px;
+                margin-top: 0.3rem;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                word-spacing: 2px;
+            }
+            .experiences_wrapper {
+                width: 99%;
+                margin: 7.5vh auto 15vh;
+                .experience_card {
+                    width: calc(96% / 5);
+                    position: relative;
+                }
+                .card-video {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 25vh;
+                    transition: .2s ease-in-out;
+                    filter: brightness(50%);
+                    &.active {
+                        filter: brightness(90%);
+                    }
+                }
+                .card_description {
+                    width: 85%;
+                    z-index: 10;
+                    color: #fff;
+                    position: absolute;
+                    top: 72.5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    user-select: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        font-family: 'Maven Pro';
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        &:nth-of-type(2) {
+                            margin-top: 0.25rem;
+                            font-size: 15px;
+                            font-weight: 100;
+                        }
+                    }
+                    .play-icon {
+                        font-size: 2.25rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .map_section {
+                position: relative;
+                margin: 7.5vh 0;
+                .map_section_bg-image {
+                    background-image: url('/parkMap.jpg');
+                    background-size: cover;
+                    width: 100%;
+                    height: 60vh;
+                    filter: brightness(70%);
+                }
+                .pin-icon {
+                    position: absolute;
+                    z-index: 55;
+                    top: 39%;
+                    left: 18.5%;
+                    font-size: 4.25rem;
+                    color: royalblue;
+                    cursor: pointer;
+                    &.second-pin {
+                        color: red;
+                        top: 23%;
+                        left: 12.25%;
+                    }
+                    &.third-pin {
+                        color: rgb(17, 255, 0);
+                        top: 23%;
+                        left: 60.25%;
+                    }
+                    &.fourth-pin {
+                        color: rgb(17, 255, 0);
+                        top: 35%;
+                        left: 80.75%;
+                    }
+                }
+                .map_section-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 30;
+                    color: #fff;
+                    background-color: rgb(35, 35, 35);
+                    padding: 0.8rem 1rem;
+                    h6 {
+                        font-family: 'Maven Pro';
+                        letter-spacing: 0.3px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .arrow-icon {
+                            color: orange;
+                            font-size: 28px;
+                            margin-left: 0.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    p {
+                        margin-top: 2px;
+                        font-size: 15px;
+                        font-weight: 100;
+                    }
+                }
+                .map_section-description {
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.825);
+                    position: absolute;
+                    left: 12.5%;
+                    bottom: 0;
+                    transform: translateY(50%);
+                    width: auto;
+                    width: 25%;
+                    padding: 1rem 2rem;
+                    backdrop-filter: blur(2.5px);
+                    h6 {
+                        margin: 0.25rem 0 1.25rem;
+                        font-family: "Space Grotesk", sans-serif;
+                        font-size: 1.45rem;
+                        line-height: 2rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        user-select: none;
+                        .icon {
+                            font-size: 1.75rem;
+                        }
+                    }
+                    .description_paragraph {
+                        font-size: 17px;
+                        font-weight: 200;
+                        font-variant: small-caps;
+                        letter-spacing: 1.25px;
+                        text-align: left;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}

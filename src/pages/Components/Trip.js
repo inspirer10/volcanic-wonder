@@ -104,7 +104,7 @@ function Trip() {
                                     loop
                                     muted
                                     disablepictureinpicture
-                                    preload
+                                    //preload
                                     ref={(el) =>
                                         (videoRefs.current[index] = el)
                                     }
