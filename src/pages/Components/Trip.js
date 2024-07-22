@@ -6,6 +6,8 @@ import {
     MdOutlinePauseCircleOutline as PauseIcon,
 } from 'react-icons/md';
 
+import { IoIosPin as Pin } from 'react-icons/io';
+
 function Trip() {
     const videoRefs = useRef([]);
 
@@ -135,13 +137,28 @@ function Trip() {
                 </div>
 
                 <div className='map_section'>
+                    <Pin className='pin-icon' />
+                    <Pin className='pin-icon second-pin' />
+                    <Pin className='pin-icon third-pin' />
+                    <Pin className='pin-icon fourth-pin' />
                     <div className='map_section_bg-image' />
-                    <div className='test'>
+                    <div className='map_section-text'>
                         <h6>
                             Harpers Ferry Center
                             <HiArrowLongRight className='arrow-icon' />
                         </h6>
                         <p>The National Park Services</p>
+                    </div>
+
+                    <div className='map_section-description'>
+                        <h6>
+                            High Sierra Camp area
+                            <Pin className='icon' />
+                        </h6>
+                        <p className='description_paragraph'>
+                            this map includes high sierra camps. toulumme
+                            meadows lodge, and white wolf lodge spots
+                        </p>
                     </div>
                 </div>
             </article>

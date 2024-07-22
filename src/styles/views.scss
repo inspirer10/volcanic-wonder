@@ -75,17 +75,15 @@
             filter: brightness(0.6);
         }
         .views-video-description {
-            color: #fff;
-            left: 60%;
-            z-index: 15;
-            width: 35%;
-            background-color: rgba(0, 0, 0, 0.8);
             position: absolute;
-            bottom: -4rem;
-            width: auto;
+            bottom: 0;
+            left: 15%;
+            transform: translateY(50%);
+            z-index: 15;
+            width: 42%;
             padding: 1rem 2rem;
-            padding-right: 3rem;
-            transform: translateX(-120%);
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.8);
             h5 {
                 font-family: "Space Grotesk", sans-serif;
                 font-size: 1.4rem;
@@ -340,12 +338,12 @@
                 .coastal_video-description {
                     background-color: rgba(0, 0, 0, 0.75);
                     position: absolute;
-                    bottom: -5rem;
+                    bottom: 0;
                     left: 60%;
+                    transform: translate(-25%, 50%);
                     width: auto;
                     padding: 1rem 2rem;
                     padding-right: 3rem;
-                    transform: translateX(-25%);
                     backdrop-filter: blur(3.5px);
                     h6 {
                         margin: 0.25rem 0 1.5rem;
