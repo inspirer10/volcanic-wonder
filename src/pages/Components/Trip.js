@@ -81,7 +81,7 @@ function Trip() {
                 ref={container}
             >
                 <motion.div style={{ y: scrollParalax }}>
-                    <img src='trip1.jpg' alt='image' />
+                    <img loading='lazy' src='trip1.jpg' alt='image' />
                 </motion.div>
 
                 <div className='views_description'>

@@ -123,7 +123,7 @@ function Views() {
             <section className='views_section-container'>
                 <article className='views_article' id='views' ref={container}>
                     <motion.div style={{ y: scrollParalax }}>
-                        <img src='img1.jpg' alt='image' />
+                        <img loading='lazy' src='img1.jpg' alt='image' />
                     </motion.div>
 
                     <div className='views_description'>
@@ -160,7 +160,7 @@ function Views() {
                         loop
                         muted
                         disablepictureinpicture
-                        preload
+                        //preload
                     />
 
                     <div className='views-video-description'>
@@ -243,6 +243,7 @@ function Views() {
                         <div className='explore-cards-wrapper'>
                             <div className='explore-card'>
                                 <img
+                                    loading='lazy'
                                     src='thumbnail2.jpg'
                                     alt='card thumbnail'
                                 />
@@ -260,6 +261,7 @@ function Views() {
                             </div>
                             <div className='explore-card'>
                                 <img
+                                    loading='lazy'
                                     src='thumbnail3.jpg'
                                     alt='card thumbnail'
                                 />
@@ -276,6 +278,7 @@ function Views() {
                             </div>
                             <div className='explore-card'>
                                 <img
+                                    loading='lazy'
                                     src='thumbnail1.jpg'
                                     alt='card thumbnail'
                                 />
