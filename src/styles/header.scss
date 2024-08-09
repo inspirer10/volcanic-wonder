@@ -56,3 +56,17 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    header {
+        nav {
+            width: 72.5%;
+            p {
+                font-size: 17px;
+                &.logo {
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}

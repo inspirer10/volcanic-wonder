@@ -8,6 +8,7 @@ import {
 
 import { IoIosPin as Pin } from 'react-icons/io';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Image from 'next/image';
 
 function Trip() {
     const videoRefs = useRef([]);
@@ -81,7 +82,12 @@ function Trip() {
                 ref={container}
             >
                 <motion.div style={{ y: scrollParalax }}>
-                    <img loading='lazy' src='trip1.jpg' alt='image' />
+                    <Image
+                        src='/trip1.jpg'
+                        alt='image'
+                        width={400}
+                        height={400}
+                    />
                 </motion.div>
 
                 <div className='views_description'>

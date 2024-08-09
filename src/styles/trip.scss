@@ -397,3 +397,38 @@
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    .your_trip_section {
+        .your_trip-wrapper {
+            justify-content: space-around;
+            padding-left: 2.5%;
+            width: 97.5%;
+            img {
+                min-width: 42.5vw;
+                max-width: 42.5vw;
+            }
+            .views_description {
+                width: 45%;
+                .description-text {
+                    width: 85%;
+                }
+            }
+        }
+        .experience-slider-container {
+            .experiences_wrapper {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .experience_card {
+                    width: 33%;
+                }
+            }
+            .map_section {
+                .map_section-description {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}

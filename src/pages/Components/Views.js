@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2';
 import { MdVolcano } from 'react-icons/md';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Image from 'next/image';
 
 function Views() {
     const [currentDescription, setCurrentDescription] = useState(0);
     const [currentImg, setCurrentImg] = useState(1);
+
     const descriptionOptions = [
         {
             title: 'PARK LANDFORMS',
@@ -123,7 +125,12 @@ function Views() {
             <section className='views_section-container'>
                 <article className='views_article' id='views' ref={container}>
                     <motion.div style={{ y: scrollParalax }}>
-                        <img loading='lazy' src='img1.jpg' alt='image' />
+                        <Image
+                            src='/img1.jpg'
+                            alt='image'
+                            height={500}
+                            width={500}
+                        />
                     </motion.div>
 
                     <div className='views_description'>
@@ -242,10 +249,11 @@ function Views() {
 
                         <div className='explore-cards-wrapper'>
                             <div className='explore-card'>
-                                <img
-                                    loading='lazy'
-                                    src='thumbnail2.jpg'
+                                <Image
+                                    src='/thumbnail2.jpg'
                                     alt='card thumbnail'
+                                    height={400}
+                                    width={400}
                                 />
                                 <h5>KARST LANDSCAPES</h5>
                                 <p className='card-text'>
@@ -260,10 +268,11 @@ function Views() {
                                 </p>
                             </div>
                             <div className='explore-card'>
-                                <img
-                                    loading='lazy'
-                                    src='thumbnail3.jpg'
+                                <Image
+                                    src='/thumbnail3.jpg'
                                     alt='card thumbnail'
+                                    height={400}
+                                    width={400}
                                 />
                                 <h5>FLUVIAL LANDSFORMS</h5>
                                 <p className='card-text'>
@@ -277,10 +286,11 @@ function Views() {
                                 </p>
                             </div>
                             <div className='explore-card'>
-                                <img
-                                    loading='lazy'
-                                    src='thumbnail1.jpg'
+                                <Image
+                                    src='/thumbnail1.jpg'
                                     alt='card thumbnail'
+                                    height={400}
+                                    width={400}
                                 />
                                 <h5>FLUVIAL LANDSFORMS </h5>
                                 <p className='card-text'>

@@ -335,7 +335,7 @@
             }
             .explore-cards-wrapper {
                 margin: 10vh auto;
-                width: 92.5%;
+                width: 95%;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
@@ -644,6 +644,77 @@
                         .description_paragraph {
                             letter-spacing: 1.2px;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .introduction_text {
+        width: 95%;
+        justify-content: space-between;
+        h3 {
+            width: 37.5%;
+            margin-right: 0;
+        }
+        .description {
+            .paragraph {
+                width: 92.5%;
+            }
+        }
+    }
+    .views_section-container {
+        .views_article {
+            justify-content: space-around;
+            img {
+                min-width: 40vw;
+                max-width: 40vw;
+            }
+            .views_description {
+                margin-left: 0;
+                .description-text {
+                    width: 37.5vw;
+                }
+            }
+        }
+        .views_video_article {
+            width: 95%;
+            .views-video-description {
+                width: 60%;
+            }
+        }
+        .volcanic-landforms-article {
+            width: 97.5%;
+            .views_description {
+                h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+                .subheading {
+                    font-size: 16px;
+                    letter-spacing: 0.65px;
+                }
+                .description-text {
+                    font-size: 18px;
+                    line-height: calc(18px * 1.4);
+                }
+            }
+            .side-img {
+                height: 85vh;
+                min-width: 42vw;
+                max-width: 42vw;
+                margin-top: 7.5vh;
+            }
+        }
+        .views_experience_article {
+            .views_experience-content {
+                .coastal_video-wrapper {
+                    width: 95%;
+                    .coastal_video-description {
+                        width: 70%;
+                        left: 25%;
                     }
                 }
             }

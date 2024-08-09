@@ -85,4 +85,21 @@
     }
 }
 
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 1500px) {
+    .introduction {
+        .vid-description {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .introduction {
+        .social-icons {
+            left: 2.25rem;
+        }
+        .main-video {
+            height: 80vh;
+        }
+    }
+}
